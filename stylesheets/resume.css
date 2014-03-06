@@ -125,8 +125,7 @@ a {
 	list-style-type:circle;
 }
 
-.li tal{
-    list-style-position: inside;
+ul li.tal{
 	border-bottom: 1px solid #ccc;
 }
 
@@ -231,10 +230,10 @@ a {
 }
 
 .talent {
-    width: 32%;
+	width: 32%;
     float: left;
-    list-style: none;
 	line-height: 24px;
+	list-style: none;
 }
 
 .talent h2 {
