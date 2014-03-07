@@ -4,10 +4,12 @@
 Based on the YUI framework & Matt Brown's template: sampleresumetemplate.net
 Complete CSS overhaul & much design fine-tuning by Nate Tarrh: natetarrh.com
 
+Enhanced by Moran Nachum.
+
 --------------------------------------------------------------------------------
 */
 
-body, div, ul, li, li2, h1, h2, h3, h4, h5, h6, p {
+body, div, ul, li, li2, h1, h2, h3, h4, h5, p {
     margin: 0;
     padding: 0;
 }
@@ -77,16 +79,6 @@ body {
     float:right;
 }
 
-#pdf {
-    display: block;
-    float: right;
-    background: #666;
-    color: white;
-    padding: 6px 12px 6px 12px;
-    margin-top: 6px;
-    text-decoration: none;
-}
-
 h2 {
     font-size: 152%;
 }
@@ -95,17 +87,24 @@ h2 {
     font-style: italic;
 }
 
-h4, h6{
+h4, h5{
     font-size: 122%;
 }
 
-h1, h2, h3, h4, h6{
+h1, h2, h3, h4, h5{
     color: #333;
     font-weight: normal;
 }
 
-h6{
+h4{
 	font-style: italic;
+}
+	
+.job h5, .project h5, .ed h5, .projectlast h5{
+    position: absolute;
+    top: 0.35em;
+    right: 0;
+    text-align: right;
 }
 
 p {
@@ -172,13 +171,6 @@ ul li.tal{
     position: relative;
 }
 
-.ed h4 {
-    position: absolute;
-    top: 0.35em;
-    right: 0;
-    text-align: right;
-}
-
 .ed p {
     margin: 0.75em 0 0 0;
 }
@@ -194,20 +186,6 @@ ul li.tal{
 	text-transform: uppercase;
 	font-size: 95%;
 }	
-
-.job h4, .project h4, .ed h4, .projectlast h4{
-    position: absolute;
-    top: 0.35em;
-    right: 0;
-    text-align: right;
-}
-
-.job h5 {
-    font-size: 122%;
-	float: right;
-	color: #333;
-    font-weight: normal;
-}
 
 .job p {
     margin: 0.75em 0 0 0;
@@ -239,7 +217,7 @@ ul li.tal{
     margin-bottom: 6px;
 }
 
-.last{
+.last {
     border: none;
     float: none;
     margin-bottom: 0;
